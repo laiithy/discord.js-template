@@ -34,6 +34,8 @@ export type DiscordEvent = {
     callback: (...arguments_: any[]) => Promise<void>;
 };
 
+export type SingleDiscordEvent = (...arguments_: any[]) => Promise<void>;
+
 export type CommandRule = (
     command: DiscordCommand,
     interaction: ChatInputCommandInteraction,
